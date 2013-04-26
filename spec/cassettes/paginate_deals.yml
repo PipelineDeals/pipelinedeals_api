@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://127.0.0.1:3000/api/v3/deals.json?api_key=n8PJJWRsx0MxgOEwGk7&page=2&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 Apr 2013 21:17:52 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Set-Cookie:
+      - _session_id=d591a74b50fb63df9c3bfdedc7f66807; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Length:
+      - '3573'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - ! '"07586330fcab734b3878c6cf6de5c7af"'
+      X-Runtime:
+      - '67'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"pages":29,"page":2,"page_var":"page","per_page":5,"total":142},"entries":[{"summary":null,"primary_contact_id":null,"expected_close_date":null,"deal_stage_id":null,"name":"monetize
+        strategic ROI","primary_contact":null,"user_id":1,"company_id":null,"source_id":null,"is_example":null,"created_at":"2013/04/16
+        10:09:43 -0400","company":null,"person_ids":[],"collaborators":[],"people":[],"status":1,"custom_fields":{"custom_label_29":null,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"probability":39,"is_archived":false,"closed_time":null,"deal_stage":null,"id":6,"user":{"id":1,"last_name":"hoboson","first_name":"hobo"},"value_in_cents":365857,"import_id":null,"updated_at":"2013/04/16
+        10:09:44 -0400","expected_close_date_event_id":null},{"summary":null,"primary_contact_id":null,"expected_close_date":null,"deal_stage_id":null,"name":"architect
+        B2C ROI","primary_contact":null,"user_id":1,"company_id":null,"source_id":null,"is_example":null,"created_at":"2013/04/16
+        10:09:44 -0400","company":null,"person_ids":[],"collaborators":[],"people":[],"status":-1,"custom_fields":{"custom_label_29":null,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"probability":2,"is_archived":false,"closed_time":null,"deal_stage":null,"id":7,"user":{"id":1,"last_name":"hoboson","first_name":"hobo"},"value_in_cents":7919635,"import_id":null,"updated_at":"2013/04/16
+        10:09:44 -0400","expected_close_date_event_id":null},{"summary":null,"primary_contact_id":null,"expected_close_date":null,"deal_stage_id":null,"name":"cultivate
+        back-end models","primary_contact":null,"user_id":1,"company_id":null,"source_id":null,"is_example":null,"created_at":"2013/04/16
+        10:09:44 -0400","company":null,"person_ids":[],"collaborators":[],"people":[],"status":0,"custom_fields":{"custom_label_29":null,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"probability":53,"is_archived":false,"closed_time":null,"deal_stage":null,"id":8,"user":{"id":1,"last_name":"hoboson","first_name":"hobo"},"value_in_cents":4737478,"import_id":null,"updated_at":"2013/04/16
+        10:09:44 -0400","expected_close_date_event_id":null},{"summary":null,"primary_contact_id":null,"expected_close_date":null,"deal_stage_id":null,"name":"deliver
+        ubiquitous infrastructures","primary_contact":null,"user_id":1,"company_id":null,"source_id":null,"is_example":null,"created_at":"2013/04/16
+        10:09:44 -0400","company":null,"person_ids":[],"collaborators":[],"people":[],"status":-1,"custom_fields":{"custom_label_29":null,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"probability":4,"is_archived":false,"closed_time":null,"deal_stage":null,"id":9,"user":{"id":1,"last_name":"hoboson","first_name":"hobo"},"value_in_cents":8211008,"import_id":null,"updated_at":"2013/04/16
+        10:09:44 -0400","expected_close_date_event_id":null},{"summary":null,"primary_contact_id":null,"expected_close_date":null,"deal_stage_id":null,"name":"brand
+        leading-edge e-tailers","primary_contact":null,"user_id":1,"company_id":null,"source_id":null,"is_example":null,"created_at":"2013/04/16
+        10:09:45 -0400","company":null,"person_ids":[],"collaborators":[],"people":[],"status":-1,"custom_fields":{"custom_label_29":null,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"probability":40,"is_archived":false,"closed_time":null,"deal_stage":null,"id":10,"user":{"id":1,"last_name":"hoboson","first_name":"hobo"},"value_in_cents":6172077,"import_id":null,"updated_at":"2013/04/16
+        10:09:45 -0400","expected_close_date_event_id":null}]}'
+    http_version: 
+  recorded_at: Mon, 22 Apr 2013 21:17:52 GMT
+recorded_with: VCR 2.3.0
