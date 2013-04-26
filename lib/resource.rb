@@ -1,7 +1,6 @@
 module PipelineDeals
   class Resource < ActiveResource::Base
-    #self.site = "https://api.pipelinedeals.com/api/v3"
-    self.site = "http://127.0.0.1:3000/api/v3"
+    self.site = "https://api.pipelinedeals.com/api/v3"
     self.collection_parser = PipelineDeals::Collection
 
     def self.find(*arguments)
