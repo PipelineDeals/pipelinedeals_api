@@ -1,12 +1,12 @@
-# .
+# PipelineDeals API gem
 
-TODO: Write a gem description
+The PipelineDeals API gem is a nice ruby wrapper around the PipelineDeals API.  It will allow you full CRUD access to all of the core PipelieDeals components in a very easy-to-use library.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem '.'
+    gem 'pipeline_deals'
 
 And then execute:
 
@@ -14,11 +14,36 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install .
+    $ gem install pipeline_deals
 
 ## Usage
 
-TODO: Write usage instructions here
+First and foremost, register your api key:
+
+```ruby
+PipelineDeals.api_key = 'abcd1234'
+```
+
+
+### Getting a single deal, person, or company:
+
+```ruby
+deal = Deal.find(1234)      # find the deal
+deal.name = 'blah2'         # change an attribute
+deal.save                   # re-save the deal to the site
+deal.people                 # associations are respected
+deal.people.first.id
+deal.person_ids           
+```
+
+### Fetching collections of deals, people, or companies
+
+```ruby
+deals = Deal.find(:all)
+deals = Deal.find(:all, params: {per_page: 5, page: 2})
+deals = Deal.find(:all, params: {conditions: {deal_name: 'blah'}})
+deals = Deal.where(conditions: {deal_name: 'blah'})
+```
 
 ## Contributing
 
