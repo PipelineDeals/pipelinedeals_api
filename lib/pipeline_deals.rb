@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'active_resource'
-require_relative 'collection'
-require_relative 'resource'
-require_relative 'resources/definitions.rb'
-require_relative 'version'
+require_relative 'pipeline_deals/collection'
+require_relative 'pipeline_deals/resource'
+require_relative 'pipeline_deals/admin_resource'
+require_relative 'pipeline_deals/resources/definitions.rb'
+require_relative 'pipeline_deals/version'
 
 Dir[File.dirname(__FILE__) + '/resources/*.rb'].each {|file| require file }
 

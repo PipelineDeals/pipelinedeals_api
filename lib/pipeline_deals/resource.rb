@@ -1,7 +1,9 @@
 module PipelineDeals
   class Resource < ActiveResource::Base
-    self.site = "https://api.pipelinedeals.com/api/v3"
+    self.site = "https://api.pipelinedeals.com"
+    self.prefix = "/api/v3/"
     self.collection_parser = PipelineDeals::Collection
+
 
     def self.find(*arguments)
       scope = arguments.slice!(0)
