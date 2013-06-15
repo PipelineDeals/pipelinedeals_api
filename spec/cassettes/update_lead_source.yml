@@ -1,0 +1,197 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/admin/lead_sources.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 00:05:18 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Set-Cookie:
+      - _session_id=ddca432e0e9b34a033d4969805a6395d; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"76457704dbc4a975c52ebe4280e4e44a"'
+      Content-Length:
+      - '578'
+      X-Runtime:
+      - '19'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"per_page":200,"total":6,"pages":1,"page_var":"page","page":1},"entries":[{"flat_fee_in_cents":null,"cost_per_lead_in_cents":null,"id":2,"name":"Cold
+        Call"},{"flat_fee_in_cents":null,"cost_per_lead_in_cents":null,"id":6,"name":"Import"},{"flat_fee_in_cents":null,"cost_per_lead_in_cents":null,"id":1,"name":"None"},{"flat_fee_in_cents":null,"cost_per_lead_in_cents":null,"id":3,"name":"Referral"},{"flat_fee_in_cents":null,"cost_per_lead_in_cents":null,"id":4,"name":"Trade
+        Show"},{"flat_fee_in_cents":null,"cost_per_lead_in_cents":null,"id":5,"name":"Website"}]}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 00:05:18 GMT
+- request:
+    method: put
+    uri: http://localhost:3000/api/v3/deals/1.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: US-ASCII
+      string: ! '{"deal":{"value_in_cents":45600,"is_example":null,"company_id":null,"shared_user_ids":[],"user_id":1,"import_id":null,"deal_stage_id":2,"deal_stage":{"percent":10,"id":2,"name":"Qualified
+        Lead"},"collaborators":[],"company":null,"summary":null,"possible_notify_user_ids":[],"updated_at":"2013/06/14
+        19:54:48 -0400","source_id":5,"source":{"id":2,"name":"Cold Call"},"probability":0,"primary_contact_id":null,"created_at":"2013/05/31
+        13:10:26 -0400","expected_close_date_event_id":null,"id":1,"expected_close_date":null,"primary_contact":null,"user":{"last_name":"hoboson","first_name":"hobo","id":1},"closed_time":"2013/06/03
+        15:25:21 -0400","custom_fields":{"custom_label_29":10,"custom_label_28":0,"custom_label_27":8,"custom_label_26":5,"custom_label_25":2},"person_ids":[],"status":2,"name":"architect
+        open-source bandwidth","people":[],"is_archived":false}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 00:05:18 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Set-Cookie:
+      - _session_id=6fcacf0be69d9c9ed531cffd115e5415; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"f4a47dc831559ddda21a4ad0bc398a50"'
+      Content-Length:
+      - '853'
+      X-Runtime:
+      - '335'
+    body:
+      encoding: US-ASCII
+      string: ! '{"value_in_cents":45600,"is_example":null,"company_id":null,"shared_user_ids":[],"user_id":1,"import_id":null,"deal_stage_id":2,"deal_stage":{"percent":10,"id":2,"name":"Qualified
+        Lead"},"collaborators":[],"company":null,"summary":null,"possible_notify_user_ids":[],"updated_at":"2013/06/14
+        20:05:18 -0400","source_id":5,"source":{"id":2,"name":"Cold Call"},"probability":0,"primary_contact_id":null,"created_at":"2013/05/31
+        13:10:26 -0400","expected_close_date_event_id":null,"id":1,"expected_close_date":null,"primary_contact":null,"user":{"last_name":"hoboson","first_name":"hobo","id":1},"closed_time":"2013/06/03
+        15:25:21 -0400","custom_fields":{"custom_label_29":10,"custom_label_28":0,"custom_label_27":8,"custom_label_26":5,"custom_label_25":2},"person_ids":[],"status":2,"name":"architect
+        open-source bandwidth","people":[],"is_archived":false}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 00:05:18 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/deals/1.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 00:05:19 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Set-Cookie:
+      - _session_id=f8cc0d2efb1a79c888683ac4c975bfa1; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"cef0c6a12770ab0ca607e93f3c26b4e9"'
+      Content-Length:
+      - '851'
+      X-Runtime:
+      - '40'
+    body:
+      encoding: US-ASCII
+      string: ! '{"value_in_cents":45600,"is_example":null,"company_id":null,"shared_user_ids":[],"user_id":1,"import_id":null,"deal_stage_id":2,"deal_stage":{"percent":10,"id":2,"name":"Qualified
+        Lead"},"collaborators":[],"company":null,"summary":null,"possible_notify_user_ids":[],"updated_at":"2013/06/14
+        20:05:18 -0400","source_id":5,"source":{"id":5,"name":"Website"},"probability":0,"primary_contact_id":null,"created_at":"2013/05/31
+        13:10:26 -0400","expected_close_date_event_id":null,"id":1,"expected_close_date":null,"primary_contact":null,"user":{"last_name":"hoboson","first_name":"hobo","id":1},"closed_time":"2013/06/03
+        15:25:21 -0400","custom_fields":{"custom_label_29":10,"custom_label_28":0,"custom_label_27":8,"custom_label_26":5,"custom_label_25":2},"person_ids":[],"status":2,"name":"architect
+        open-source bandwidth","people":[],"is_archived":false}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 00:05:19 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/deals/1.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 00:05:19 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Set-Cookie:
+      - _session_id=28697eab4a1ebf89d932f9d7ebae8546; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"cef0c6a12770ab0ca607e93f3c26b4e9"'
+      Content-Length:
+      - '851'
+      X-Runtime:
+      - '235'
+    body:
+      encoding: US-ASCII
+      string: ! '{"value_in_cents":45600,"is_example":null,"company_id":null,"shared_user_ids":[],"user_id":1,"import_id":null,"deal_stage_id":2,"deal_stage":{"percent":10,"id":2,"name":"Qualified
+        Lead"},"collaborators":[],"company":null,"summary":null,"possible_notify_user_ids":[],"updated_at":"2013/06/14
+        20:05:18 -0400","source_id":5,"source":{"id":5,"name":"Website"},"probability":0,"primary_contact_id":null,"created_at":"2013/05/31
+        13:10:26 -0400","expected_close_date_event_id":null,"id":1,"expected_close_date":null,"primary_contact":null,"user":{"last_name":"hoboson","first_name":"hobo","id":1},"closed_time":"2013/06/03
+        15:25:21 -0400","custom_fields":{"custom_label_29":10,"custom_label_28":0,"custom_label_27":8,"custom_label_26":5,"custom_label_25":2},"person_ids":[],"status":2,"name":"architect
+        open-source bandwidth","people":[],"is_archived":false}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 00:05:19 GMT
+recorded_with: VCR 2.3.0

@@ -28,13 +28,26 @@ describe PipelineDeals, "deals" do
   describe "source" do
     it "should have a source" do
       VCR.use_cassette(:lead_source) do
-        p deal.source
+        #deal.source.should be_an_instance_of PipelineDeals::LeadSource
+        deal.source.name.should == "Cold Call"
       end
     end
 
     it "should be able to update the source" do
+      VCR.use_cassette(:update_lead_source) do
+        source = PipelineDeals::LeadSource.last
+        deal.source_id = source.id
+        deal.save
+        deal.reload.source.name.should == "Website"
+      end
     end
+  end
 
+  describe "user" do
+    it "should have a user" do
+      VCR.use_cassette(:deal_user) do
+        deal.user.should be_an_instance_of(PipelineDeals::User)
+      end
+    end
   end
 end
-

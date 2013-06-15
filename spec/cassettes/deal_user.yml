@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/users/1.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 00:09:12 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Set-Cookie:
+      - _session_id=aa330b07b208b449b4284b83ffbb73b8; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"283ceab1fae4bd0766f9431a16ab9496"'
+      Content-Length:
+      - '74'
+      X-Runtime:
+      - '31'
+    body:
+      encoding: US-ASCII
+      string: ! '{"first_name":"hobo","id":1,"avatar_thumb_url":null,"last_name":"hoboson"}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 00:09:12 GMT
+recorded_with: VCR 2.3.0
