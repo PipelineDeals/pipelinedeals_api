@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/deals/2.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 14:29:32 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Set-Cookie:
+      - _session_id=f10f9c1a9f467d4f31dc47e8fa61f956; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"da584814f3348f5ed6b226a77297e8d4"'
+      Content-Length:
+      - '880'
+      X-Runtime:
+      - '235'
+    body:
+      encoding: US-ASCII
+      string: ! '{"value_in_cents":8283700,"is_example":null,"company_id":null,"shared_user_ids":[],"user_id":1,"import_id":null,"deal_stage_id":null,"deal_stage":null,"collaborators":[],"company":null,"summary":null,"possible_notify_user_ids":[],"updated_at":"2013/06/15
+        10:29:18 -0400","source_id":null,"probability":77,"primary_contact_id":27,"created_at":"2013/05/31
+        13:10:27 -0400","expected_close_date_event_id":null,"id":2,"expected_close_date":null,"user":{"last_name":"hoboson","first_name":"hobo","id":1},"primary_contact":{"last_name":"Grimes","first_name":"Josue","id":27},"closed_time":null,"custom_fields":{"custom_label_29":null,"custom_label_28":63784,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[27],"status":2,"name":"deploy
+        mission-critical infomediaries","people":[{"last_name":"Grimes","first_name":"Josue","id":27}],"is_archived":false}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 14:29:32 GMT
+recorded_with: VCR 2.3.0

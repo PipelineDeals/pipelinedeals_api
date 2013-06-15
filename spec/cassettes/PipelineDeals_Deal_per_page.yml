@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/deals.json?api_key=iJHyFkMUBSfjUovt29&per_page=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 15:15:41 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Length:
+      - '5793'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - ! '"bda77136c1123041eff468fe6861d1e1"'
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - _session_id=29fc816f2b633d6f355dbdb08e29672d; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      X-Runtime:
+      - '96'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"per_page":7,"total":81,"pages":12,"page_var":"page","page":1},"entries":[{"shared_user_ids":[],"updated_at":"2013/06/15
+        10:25:03 -0400","is_example":null,"closed_time":"2013/06/03 15:25:21 -0400","deal_stage":{"name":"Qualified
+        Lead","percent":10,"id":2},"value_in_cents":45600,"summary":null,"status":2,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":0,"name":"architect
+        open-source bandwidth","deal_stage_id":2,"people":[{"last_name":"Grimes","id":27,"first_name":"Josue"}],"source":{"name":"Website","id":5},"primary_contact_id":27,"id":1,"user_id":1,"created_at":"2013/05/31
+        13:10:26 -0400","user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"primary_contact":{"last_name":"Grimes","id":27,"first_name":"Josue"},"custom_fields":{"custom_label_29":10,"custom_label_28":0,"custom_label_27":8,"custom_label_26":5,"custom_label_25":2},"person_ids":[27],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":5,"expected_close_date_event_id":null},{"shared_user_ids":[],"updated_at":"2013/06/15
+        10:29:18 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":8283700,"summary":null,"status":2,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":77,"name":"deploy
+        mission-critical infomediaries","deal_stage_id":null,"people":[{"last_name":"Grimes","id":27,"first_name":"Josue"}],"primary_contact_id":27,"id":2,"user_id":1,"created_at":"2013/05/31
+        13:10:27 -0400","user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"primary_contact":{"last_name":"Grimes","id":27,"first_name":"Josue"},"custom_fields":{"custom_label_29":null,"custom_label_28":63784,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[27],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":null,"expected_close_date_event_id":null},{"shared_user_ids":[],"updated_at":"2013/05/31
+        13:10:29 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":6614872,"summary":null,"status":0,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":53,"name":"optimize
+        virtual niches","deal_stage_id":null,"people":[],"primary_contact_id":null,"id":3,"user_id":1,"created_at":"2013/05/31
+        13:10:28 -0400","primary_contact":null,"user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"custom_fields":{"custom_label_29":null,"custom_label_28":35058,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":null,"expected_close_date_event_id":null},{"shared_user_ids":[],"updated_at":"2013/05/31
+        13:10:30 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":2140605,"summary":null,"status":1,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":17,"name":"expedite
+        visionary markets","deal_stage_id":null,"people":[],"primary_contact_id":null,"id":4,"user_id":1,"created_at":"2013/05/31
+        13:10:29 -0400","primary_contact":null,"user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"custom_fields":{"custom_label_29":null,"custom_label_28":3639,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":null,"expected_close_date_event_id":null},{"shared_user_ids":[],"updated_at":"2013/05/31
+        13:10:31 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":2022963,"summary":null,"status":-1,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":53,"name":"innovate
+        next-generation architectures","deal_stage_id":null,"people":[],"primary_contact_id":null,"id":5,"user_id":1,"created_at":"2013/05/31
+        13:10:30 -0400","primary_contact":null,"user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"custom_fields":{"custom_label_29":null,"custom_label_28":10721,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":null,"expected_close_date_event_id":null},{"shared_user_ids":[],"updated_at":"2013/05/31
+        13:10:31 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":9452766,"summary":null,"status":0,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":99,"name":"target
+        turn-key markets","deal_stage_id":null,"people":[],"primary_contact_id":null,"id":6,"user_id":1,"created_at":"2013/05/31
+        13:10:31 -0400","primary_contact":null,"user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"custom_fields":{"custom_label_29":null,"custom_label_28":93581,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":null,"expected_close_date_event_id":null},{"shared_user_ids":[],"updated_at":"2013/05/31
+        13:10:32 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":8446274,"summary":null,"status":1,"is_archived":false,"collaborators":[],"company":null,"possible_notify_user_ids":[],"probability":54,"name":"disintermediate
+        strategic niches","deal_stage_id":null,"people":[],"primary_contact_id":null,"id":7,"user_id":1,"created_at":"2013/05/31
+        13:10:31 -0400","primary_contact":null,"user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"custom_fields":{"custom_label_29":null,"custom_label_28":45609,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[],"import_id":null,"expected_close_date":null,"company_id":null,"source_id":null,"expected_close_date_event_id":null}]}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 15:15:41 GMT
+recorded_with: VCR 2.3.0

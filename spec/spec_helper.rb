@@ -3,9 +3,13 @@ require 'vcr'
 require 'pipeline_deals'
 require 'pry'
 
+require 'pipeline_deals/pagination_spec'
+require 'pipeline_deals/has_documents'
+require 'pipeline_deals/has_people'
+
 PipelineDeals::Resource.site = "http://localhost:3000"
 
-ActiveResource::Base.logger = Logger.new(STDOUT)
+#ActiveResource::Base.logger = Logger.new(STDOUT)
 
 VCR.configure do |c|
   c.cassette_library_dir     = './spec/cassettes'
@@ -15,4 +19,8 @@ end
 
 RSpec.configure do |c|
   c.extend VCR::RSpec::Macros
+end
+
+def cassette(append)
+  "#{described_class.to_s}_#{append}"
 end

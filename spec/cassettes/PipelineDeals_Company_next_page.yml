@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/companies.json?api_key=iJHyFkMUBSfjUovt29&page=2&per_page=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 15:22:28 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Length:
+      - '1748'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - ! '"6e68b384740d16c1f989c07afdebdfd5"'
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - _session_id=055fe35f8e213f254562e84987cda12c; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      X-Runtime:
+      - '57'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"per_page":3,"total":108,"pages":37,"page_var":"page","page":2},"entries":[{"phone1_desc":null,"updated_at":"2013/05/31
+        13:10:20 -0400","total_pipeline":0,"postal_code":null,"description":null,"image_thumb_url":"/images/thumb/missing_company.png","phone2_desc":null,"email":null,"country":null,"possible_notify_user_ids":[],"won_deals_total":0,"name":"Bogan-Prosacco","phone3_desc":null,"id":100,"city":null,"created_at":"2013/05/31
+        13:10:20 -0400","phone4":null,"phone3":null,"phone2":null,"phone1":null,"custom_fields":{},"phone4_desc":null,"import_id":null,"address_2":null,"address_1":null,"web":null,"state":null,"fax":null},{"phone1_desc":null,"updated_at":"2013/05/31
+        13:10:24 -0400","total_pipeline":0,"postal_code":null,"description":null,"image_thumb_url":"/images/thumb/missing_company.png","phone2_desc":null,"email":null,"country":null,"possible_notify_user_ids":[],"won_deals_total":0,"name":"Corkery
+        Inc","phone3_desc":null,"id":105,"city":null,"created_at":"2013/05/31 13:10:23
+        -0400","phone4":null,"phone3":null,"phone2":null,"phone1":null,"custom_fields":{},"phone4_desc":null,"import_id":null,"address_2":null,"address_1":null,"web":null,"state":null,"fax":null},{"phone1_desc":null,"updated_at":"2013/05/31
+        13:09:58 -0400","total_pipeline":0,"postal_code":null,"description":null,"image_thumb_url":"/images/thumb/missing_company.png","phone2_desc":null,"email":null,"country":null,"possible_notify_user_ids":[],"won_deals_total":0,"name":"Crona-Rowe","phone3_desc":null,"id":60,"city":null,"created_at":"2013/05/31
+        13:09:58 -0400","phone4":null,"phone3":null,"phone2":null,"phone1":null,"custom_fields":{},"phone4_desc":null,"import_id":null,"address_2":null,"address_1":null,"web":null,"state":null,"fax":null}]}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 15:22:28 GMT
+recorded_with: VCR 2.3.0

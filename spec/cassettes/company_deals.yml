@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/deals.json?api_key=iJHyFkMUBSfjUovt29&company_id=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 15:25:51 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Length:
+      - '897'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - ! '"7c072e3c3a57f9c0135323ce439d6f9e"'
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - _session_id=f7e460896f71bc1b7efa09512a21ffa1; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      X-Runtime:
+      - '37'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"per_page":200,"total":1,"pages":1,"page_var":"page","page":1},"entries":[{"shared_user_ids":[],"updated_at":"2013/06/15
+        10:54:41 -0400","is_example":null,"closed_time":null,"deal_stage":null,"value_in_cents":6759800,"summary":null,"status":2,"is_archived":false,"collaborators":[],"company":{"name":"Tillman
+        Inc","id":3},"possible_notify_user_ids":[],"probability":6,"name":"disintermediate
+        value-added technologies","deal_stage_id":null,"people":[],"primary_contact_id":null,"id":81,"user_id":1,"created_at":"2013/05/31
+        13:11:17 -0400","primary_contact":null,"user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"custom_fields":{"custom_label_29":null,"custom_label_28":4055,"custom_label_27":null,"custom_label_26":null,"custom_label_25":null},"person_ids":[],"import_id":null,"expected_close_date":null,"company_id":3,"source_id":null,"expected_close_date_event_id":null}]}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 15:25:51 GMT
+recorded_with: VCR 2.3.0

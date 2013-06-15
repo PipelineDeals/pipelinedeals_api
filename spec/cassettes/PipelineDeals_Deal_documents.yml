@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/documents.json?api_key=iJHyFkMUBSfjUovt29&deal_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 15:37:54 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Length:
+      - '701'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - ! '"32ffd71e32759963e482c802499a7d84"'
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - _session_id=a58159c86c990ea0c8c536dcac90ad76; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      X-Runtime:
+      - '43'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"per_page":200,"total":1,"pages":1,"page_var":"page","page":1},"entries":[{"person":null,"owner":{"last_name":"hoboson","id":1,"first_name":"hobo"},"deal":{"name":"architect
+        open-source bandwidth","id":1},"owner_id":1,"updated_at":"2013/06/15 11:34:26
+        -0400","company":null,"deal_id":1,"public_link":"https://pipeline-dev-userdata.s3.amazonaws.com/uploaded_documents/1/yes.xls?AWSAccessKeyId=17S233VC0WDV5X5TRN02\u0026Expires=1371314274\u0026Signature=woxToyR%2Bk7N%2BOa1m08OO7yETr9w%3D\u0026response-content-disposition=attachment\u0026response-content-type=application%2Fvnd.ms-excel","title":"yes.xls","id":1,"person_id":null,"created_at":"2013/06/15
+        11:34:26 -0400","size_in_k":1}]}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 15:37:54 GMT
+recorded_with: VCR 2.3.0
