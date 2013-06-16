@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/people.json?api_key=iJHyFkMUBSfjUovt29&company_id=3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Jun 2013 15:50:50 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Length:
+      - '1233'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Etag:
+      - ! '"95c500bbb016aae461679f3a1a16502c"'
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - _session_id=187cc80cd3aa76e682e30032363e5c00; path=/; HttpOnly
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+      X-Runtime:
+      - '41'
+    body:
+      encoding: US-ASCII
+      string: ! '{"pagination":{"per_page":200,"total":1,"pages":1,"page_var":"page","page":1},"entries":[{"home_phone":null,"lead_status":null,"website":null,"updated_at":"2013/05/31
+        13:09:26 -0400","twitter":null,"last_name":"Murphy","home_country":null,"total_pipeline":0,"viewed_at":null,"first_name":"Rigoberto","company":{"image_thumb_url":"/images/thumb/missing_company.png","name":"Tillman
+        Inc","id":3,"deal_ids":[81]},"image_thumb_url":"/images/thumb/missing.png","predefined_contacts_tag_ids":[],"work_address_2":null,"work_address_1":null,"home_city":null,"email2":null,"email":null,"possible_notify_user_ids":[],"won_deals_total":0,"instant_message":null,"id":3,"home_postal_code":null,"lead_source":null,"predefined_contacts_tags":[],"work_state":null,"user_id":1,"position":null,"mobile":null,"home_state":null,"home_email":null,"home_address_2":null,"home_address_1":null,"deals":[],"deal_ids":[],"phone":null,"facebook_url":null,"created_at":"2013/05/31
+        13:09:25 -0400","user":{"last_name":"hoboson","id":1,"first_name":"hobo"},"work_postal_code":null,"work_city":null,"custom_fields":{},"full_name":"Rigoberto
+        Murphy","work_country":null,"linked_in_url":null,"company_id":3,"company_name":"Tillman
+        Inc","type":"Contact","fax":null}]}'
+    http_version: 
+  recorded_at: Sat, 15 Jun 2013 15:50:50 GMT
+recorded_with: VCR 2.3.0

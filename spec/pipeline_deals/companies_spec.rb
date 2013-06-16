@@ -1,7 +1,12 @@
 require 'spec_helper'
 PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY']
 describe PipelineDeals::Company do
-  #it_should_behave_like "a paginated collection"
+  it_should_behave_like "a paginated collection"
+
+  let(:docs_obj) { company }
+  let(:people_obj) { company }
+  it_should_behave_like "an object that can have documents"
+  it_should_behave_like "an object that can have people"
 
   let(:company) { VCR.use_cassette(:get_a_company) { PipelineDeals::Company.find 3 } }
 
@@ -9,13 +14,6 @@ describe PipelineDeals::Company do
     VCR.use_cassette(:company_deals) do
       company.deals.size.should == 1
       company.deals.first.name.should == "disintermediate value-added technologies"
-    end
-  end
-
-  it "should have many people" do
-    VCR.use_cassette(:company_people) do
-      company.people.size.should == 1
-      company.people.first.full_name.should == "Rigoberto Murphy"
     end
   end
 
