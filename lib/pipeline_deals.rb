@@ -10,7 +10,15 @@ module PipelineDeals
     @api_key
   end
 
-  def self.api_key=(key)
-    @api_key = key
+  def self.api_key=(api_key)
+    @api_key = api_key
+  end
+
+  def self.app_key
+    @app_key
+  end
+
+  def self.app_key=(app_key)
+    @app_key = app_key
   end
 end
