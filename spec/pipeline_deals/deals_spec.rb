@@ -4,9 +4,13 @@ describe PipelineDeals::Deal do
   it_should_behave_like "a paginated collection"
 
   let(:docs_obj) { deal }
+  let(:cals_obj) { deal }
+  let(:notes_obj) { deal }
   let(:people_obj) { VCR.use_cassette(:deal_with_primary_contact) { PipelineDeals::Deal.find 2 } }
   it_should_behave_like "an object that can have documents"
   it_should_behave_like "an object that can have people"
+  it_should_behave_like "an object that can have notes"
+  it_should_behave_like "an object that can have calendar_entries"
 
   let(:deal) { VCR.use_cassette(:get_a_deal) { PipelineDeals::Deal.find 1 } }
 

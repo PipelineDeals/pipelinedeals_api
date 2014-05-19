@@ -3,7 +3,7 @@ module PipelineDeals
     has_many :people, class_name: PipelineDeals::Person
     has_many :documents, class_name: PipelineDeals::Document
     has_many :notes, class_name: PipelineDeals::Note
-    has_many :calendar_entries, class_name: PipelineDeals::CalendarEntry, as: :association
+    has_many :calendar_entries, class_name: PipelineDeals::CalendarEntry
     belongs_to :primary_contact, class_name: PipelineDeals::Person
     belongs_to :company, class_name: PipelineDeals::Company
     belongs_to :user, class_name: PipelineDeals::User

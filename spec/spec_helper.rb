@@ -5,9 +5,12 @@ require 'pry'
 
 require 'pipeline_deals/pagination_spec'
 require 'pipeline_deals/has_documents'
+require 'pipeline_deals/has_notes'
+require 'pipeline_deals/has_calendar_entries'
 require 'pipeline_deals/has_people'
+require 'pipeline_deals/has_deals'
 
-PipelineDeals::Resource.site = "http://localhost:3000"
+PipelineDeals::Resource.site = ENV['PIPELINEDEALS_URL'] || "http://localhost:3000"
 
 #ActiveResource::Base.logger = Logger.new(STDOUT)
 

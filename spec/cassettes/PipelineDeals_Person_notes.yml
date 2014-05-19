@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/notes.json?api_key=iJHyFkMUBSfjUovt29&person_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 19 May 2014 16:28:37 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Runtime:
+      - '985'
+      Etag:
+      - ! '"d3a21f90ca9209ad6dacd4bbd6d910c2"'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Length:
+      - '1812'
+    body:
+      encoding: US-ASCII
+      string: ! '{"entries":[{"company_id":1,"content":"Nesciunt ex quo magni natus
+        quidem quos.\nEt sit neque blanditiis eligendi saepe quis tempore.\nEt vitae
+        et omnis placeat dicta sit illum.","created_at":"2013/11/20 17:32:42 -0500","created_by_user_id":2,"deal_id":2,"id":2,"note_category_id":1,"person_id":1,"title":null,"updated_at":"2014/05/19
+        08:55:00 -0400","user":{"first_name":"Maggie","id":2,"last_name":"Zemlak","avatar_thumb_url":null},"created_by_user":{"first_name":"Maggie","id":2,"last_name":"Zemlak","avatar_thumb_url":null},"deal":{"id":2,"name":"reinvent
+        rich infrastructures"},"person":{"id":1,"first_name":"Leonard","last_name":"Jakubowski"},"company":{"id":1,"name":"Roob
+        Group"},"note_category":{"id":1,"name":"Phone Call"},"notify_user_ids":[2],"comments":{"entries":[],"pagination":{"page":1,"page_var":"page","per_page":30,"pages":1,"total":0}},"user_id":2},{"company_id":1,"content":"Ut
+        consequuntur animi harum possimus rerum perspiciatis.\nMolestiae sunt qui
+        eveniet repellendus ad quod.\nEt omnis reprehenderit doloribus fuga.","created_at":"2013/07/14
+        23:43:01 -0400","created_by_user_id":2,"deal_id":2,"id":1,"note_category_id":2,"person_id":1,"title":null,"updated_at":"2014/05/19
+        08:55:00 -0400","user":{"first_name":"Maggie","id":2,"last_name":"Zemlak","avatar_thumb_url":null},"created_by_user":{"first_name":"Maggie","id":2,"last_name":"Zemlak","avatar_thumb_url":null},"deal":{"id":2,"name":"reinvent
+        rich infrastructures"},"person":{"id":1,"first_name":"Leonard","last_name":"Jakubowski"},"company":{"id":1,"name":"Roob
+        Group"},"note_category":{"id":2,"name":"Voicemail"},"notify_user_ids":[2],"comments":{"entries":[],"pagination":{"page":1,"page_var":"page","per_page":30,"pages":1,"total":0}},"user_id":2}],"pagination":{"page":1,"page_var":"page","per_page":200,"pages":1,"total":2}}'
+    http_version: 
+  recorded_at: Mon, 19 May 2014 16:28:37 GMT
+recorded_with: VCR 2.3.0
