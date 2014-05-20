@@ -6,5 +6,3 @@ shared_examples_for "an object that can have people" do
     end
   end
 end
-
-

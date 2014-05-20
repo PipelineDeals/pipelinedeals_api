@@ -6,4 +6,3 @@ shared_examples_for "an object that can have documents" do
     end
   end
 end
-

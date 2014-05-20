@@ -1,6 +1,5 @@
 require 'spec_helper'
 describe PipelineDeals, "admin data" do
-  before(:each) { PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY'] }
   describe "deal stages" do
     it "should list the deal stages" do
       VCR.use_cassette(:list_deal_stages) do
@@ -11,4 +10,3 @@ describe PipelineDeals, "admin data" do
     end
   end
 end
-

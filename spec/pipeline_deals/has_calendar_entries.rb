@@ -6,4 +6,3 @@ shared_examples_for "an object that can have calendar_entries" do
     end
   end
 end
-

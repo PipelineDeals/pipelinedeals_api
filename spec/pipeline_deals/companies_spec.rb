@@ -1,5 +1,5 @@
 require 'spec_helper'
-PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY']
+
 describe PipelineDeals::Company do
   it_should_behave_like "a paginated collection"
 
@@ -74,4 +74,3 @@ describe PipelineDeals::Company do
   #   end
   # end
 end
-

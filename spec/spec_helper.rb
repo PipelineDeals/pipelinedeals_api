@@ -11,6 +11,7 @@ require 'pipeline_deals/has_people'
 require 'pipeline_deals/has_deals'
 
 PipelineDeals::Resource.site = ENV['PIPELINEDEALS_URL'] || "http://localhost:3000"
+PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY'] || 'iJHyFkMUBSfjUovt29'
 
 #ActiveResource::Base.logger = Logger.new(STDOUT)
 
