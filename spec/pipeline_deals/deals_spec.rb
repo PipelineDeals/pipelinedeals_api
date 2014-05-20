@@ -14,6 +14,15 @@ describe PipelineDeals::Deal do
 
   let(:deal) { VCR.use_cassette(:get_a_deal) { PipelineDeals::Deal.find 1 } }
 
+  describe "create" do
+    it "creates a deal" do
+      VCR.use_cassette(:deal_create) do
+        new_deal = PipelineDeals::Deal.create(:name => 'a new deal')
+        new_deal.attributes.keys.include?(:id)
+      end
+    end
+  end
+
   describe "filtering" do
     it "should be able to filter on stage" do
       VCR.use_cassette(:deals_filtered_by_stage) do
