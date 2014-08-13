@@ -1,25 +1,53 @@
 require 'spec_helper'
-PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY']
+
 describe PipelineDeals::Deal do
   it_should_behave_like "a paginated collection"
 
   let(:docs_obj) { deal }
+  let(:cals_obj) { deal }
+  let(:notes_obj) { deal }
   let(:people_obj) { VCR.use_cassette(:deal_with_primary_contact) { PipelineDeals::Deal.find 2 } }
   it_should_behave_like "an object that can have documents"
   it_should_behave_like "an object that can have people"
+  it_should_behave_like "an object that can have notes"
+  it_should_behave_like "an object that can have calendar_entries"
 
   let(:deal) { VCR.use_cassette(:get_a_deal) { PipelineDeals::Deal.find 1 } }
 
+  describe "create" do
+    it "creates a deal" do
+      VCR.use_cassette(:deal_create) do
+        new_deal = PipelineDeals::Deal.create(:name => 'a new deal')
+        new_deal.attributes.keys.include?(:id)
+      end
+    end
+  end
+
   describe "filtering" do
-    it "should be able to filter on stage" do
+    it "filters on stage" do
       VCR.use_cassette(:deals_filtered_by_stage) do
         deals = PipelineDeals::Deal.where(conditions: {deal_stage: [2,4]})
         deals.size.should == 3
         deals.all? {|deal| [2,4].include?(deal.deal_stage_id) }
       end
     end
-  end
 
+    it "filters on numeric custom field" do
+      VCR.use_cassette(:deals_filtered_by_custom_field) do
+        deals = PipelineDeals::Deal.where(conditions: {custom_label_11: { from: 3, to: 7 }})
+        deals.size.should == 1
+        deals.all? {|deal| deal.custom_fields.custom_label_11 >= 3 && deal.custom_fields.custom_label_11 <+ 7 }
+      end
+    end
+
+    it "filters on picklist custom field" do
+      VCR.use_cassette(:deals_filtered_by_custom_field) do
+        deals = PipelineDeals::Deal.where(conditions: {custom_label_12: [19,20]})
+        deals.size.should == 1
+        deals.all? {|deal| ([19,20] & deal.custom_fields.custom_label_12).any? }
+      end
+    end
+  end
 
   describe "associations" do
     it "should have a deal stage" do

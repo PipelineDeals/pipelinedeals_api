@@ -34,5 +34,3 @@ shared_examples_for "a paginated collection" do
     end
   end
 end
-
-

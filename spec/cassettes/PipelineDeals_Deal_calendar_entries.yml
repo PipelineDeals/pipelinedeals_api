@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/calendar_entries.json?api_key=iJHyFkMUBSfjUovt29&deal_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 May 2014 01:11:48 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Runtime:
+      - '1501'
+      Etag:
+      - ! '"b98a69351d24438820332cb3e2303270"'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Length:
+      - '794'
+      Set-Cookie:
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"entries":[{"all_day":true,"association_id":1,"association_type":"Deal","base_entry_id":null,"category_id":5,"company_id":null,"complete":false,"completed_at":null,"created_at":"2014/05/19
+        11:13:43 -0400","description":null,"due_date":"2014/05/29","end_time":null,"exdate":null,"exrule":null,"google_calendar_id":null,"id":1,"name":"Expected
+        close date","owner_id":2,"rdate":null,"rrule":null,"start_time":null,"type":"CalendarTask","updated_at":"2014/05/19
+        11:13:43 -0400","part_of_recurring_series":false,"recurrence_end":null,"category":{"id":5,"name":"Milestone"},"owner":{"id":2,"first_name":"Maggie","last_name":"Zemlak"},"association":{"id":1,"name":"leverage
+        magnetic e-tailers"},"associated_company":null}],"pagination":{"page":1,"page_var":"page","per_page":200,"pages":1,"total":1}}'
+    http_version: 
+  recorded_at: Tue, 20 May 2014 01:11:48 GMT
+recorded_with: VCR 2.3.0

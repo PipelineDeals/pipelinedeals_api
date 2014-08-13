@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v3/deals.json?api_key=iJHyFkMUBSfjUovt29
+    body:
+      encoding: UTF-8
+      string: ! '{"deal":{"name":"a new deal"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 May 2014 04:07:45 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Runtime:
+      - '2306'
+      Etag:
+      - ! '"6cdd712c2113380f7ac94c569c9d2ae8"'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Length:
+      - '697'
+      Set-Cookie:
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"closed_time":null,"company_id":null,"created_at":"2014/05/20 00:07:44
+        -0400","deal_stage_id":null,"expected_close_date":null,"expected_close_date_event_id":null,"id":8,"import_id":null,"is_archived":false,"is_example":null,"name":"a
+        new deal","primary_contact_id":null,"probability":null,"source_id":null,"status":null,"summary":null,"updated_at":"2014/05/20
+        00:07:44 -0400","user_id":2,"value_in_cents":null,"user":{"id":2,"first_name":"Maggie","last_name":"Zemlak"},"people":[],"deal_stage":null,"primary_contact":null,"company":null,"collaborators":[],"shared_user_ids":[],"person_ids":[],"custom_fields":{"custom_label_1":null,"custom_label_2":null,"custom_label_3":null,"custom_label_4":0}}'
+    http_version: 
+  recorded_at: Tue, 20 May 2014 04:07:45 GMT
+recorded_with: VCR 2.3.0

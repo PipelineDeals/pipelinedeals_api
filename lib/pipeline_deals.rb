@@ -2,6 +2,7 @@ require 'rubygems'
 require 'active_resource'
 require_relative 'pipeline_deals/resources'
 require_relative 'pipeline_deals/version'
+require_relative 'pipeline_deals/resources/definitions'
 
 Dir[File.dirname(__FILE__) + '/resources/*.rb'].each {|file| p "requring #{file}"; require file }
 

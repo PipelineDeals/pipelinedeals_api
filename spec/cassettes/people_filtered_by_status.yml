@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v3/people.json?api_key=iJHyFkMUBSfjUovt29&conditions%5Bperson_status%5D%5B0%5D=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 19 May 2014 16:49:32 GMT
+      Status:
+      - 200 OK
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Runtime:
+      - '1594'
+      Etag:
+      - ! '"9c47c29e4e3a8ae3adcdb6eae36ba7ac"'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Length:
+      - '4640'
+      Set-Cookie:
+      - is_legacy_user=; domain=pipelinedeals.com; path=/; expires=Thu, 01-Jan-1970
+        00:00:00 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"entries":[{"company_id":1,"created_at":"2014/05/19 08:54:59 -0400","email":null,"email2":null,"facebook_url":null,"fax":null,"first_name":"Leonard","home_address_1":null,"home_address_2":null,"home_city":null,"home_country":null,"home_email":null,"home_phone":null,"home_postal_code":null,"home_state":null,"id":1,"instant_message":null,"last_name":"Jakubowski","linked_in_url":null,"mobile":null,"phone":null,"position":null,"twitter":null,"type":"Contact","updated_at":"2014/05/19
+        12:13:24 -0400","user_id":2,"viewed_at":null,"website":null,"work_address_1":null,"work_address_2":null,"work_city":null,"work_country":null,"work_postal_code":null,"work_state":null,"company_name":"Roob
+        Group","full_name":"Leonard Jakubowski","predefined_contacts_tag_ids":[],"deal_ids":[2],"image_thumb_url":"/images/thumb/missing.png","image_mobile_url":"/images/mobile/missing.png","predefined_contacts_tags":[],"deals":[{"id":2,"name":"reinvent
+        rich infrastructures"}],"lead_source":{"id":2,"name":"Cold Call"},"lead_status":{"hex_color":"C73408","id":2,"name":"Hot"},"company":{"id":1,"name":"Roob
+        Group"},"user":{"id":2,"first_name":"Maggie","last_name":"Zemlak"},"custom_fields":{}},{"company_id":2,"created_at":"2014/05/19
+        08:55:01 -0400","email":null,"email2":null,"facebook_url":null,"fax":null,"first_name":"Kendrick","home_address_1":null,"home_address_2":null,"home_city":null,"home_country":null,"home_email":null,"home_phone":null,"home_postal_code":null,"home_state":null,"id":2,"instant_message":null,"last_name":"Rolfson","linked_in_url":null,"mobile":null,"phone":null,"position":null,"twitter":null,"type":"Contact","updated_at":"2014/05/19
+        11:41:43 -0400","user_id":2,"viewed_at":null,"website":null,"work_address_1":null,"work_address_2":null,"work_city":null,"work_country":null,"work_postal_code":null,"work_state":null,"company_name":"Baumbach,
+        Mitchell and Pfannerstill","full_name":"Kendrick Rolfson","predefined_contacts_tag_ids":[],"deal_ids":[],"image_thumb_url":"/images/thumb/missing.png","image_mobile_url":"/images/mobile/missing.png","predefined_contacts_tags":[],"deals":[],"lead_source":{"id":2,"name":"Cold
+        Call"},"lead_status":{"hex_color":"C73408","id":2,"name":"Hot"},"company":{"id":2,"name":"Baumbach,
+        Mitchell and Pfannerstill"},"user":{"id":2,"first_name":"Maggie","last_name":"Zemlak"},"custom_fields":{}},{"company_id":3,"created_at":"2014/05/19
+        08:55:01 -0400","email":null,"email2":null,"facebook_url":null,"fax":null,"first_name":"Dorcas","home_address_1":null,"home_address_2":null,"home_city":null,"home_country":null,"home_email":null,"home_phone":null,"home_postal_code":null,"home_state":null,"id":3,"instant_message":null,"last_name":"McCullough","linked_in_url":null,"mobile":null,"phone":null,"position":null,"twitter":null,"type":"Contact","updated_at":"2014/05/19
+        11:41:43 -0400","user_id":2,"viewed_at":null,"website":null,"work_address_1":null,"work_address_2":null,"work_city":null,"work_country":null,"work_postal_code":null,"work_state":null,"company_name":"Walker
+        Inc","full_name":"Dorcas McCullough","predefined_contacts_tag_ids":[],"deal_ids":[],"image_thumb_url":"/images/thumb/missing.png","image_mobile_url":"/images/mobile/missing.png","predefined_contacts_tags":[],"deals":[],"lead_source":{"id":2,"name":"Cold
+        Call"},"lead_status":{"hex_color":"C73408","id":2,"name":"Hot"},"company":{"id":3,"name":"Walker
+        Inc"},"user":{"id":2,"first_name":"Maggie","last_name":"Zemlak"},"custom_fields":{}},{"company_id":4,"created_at":"2014/05/19
+        08:55:03 -0400","email":null,"email2":null,"facebook_url":null,"fax":null,"first_name":"Tamia","home_address_1":null,"home_address_2":null,"home_city":null,"home_country":null,"home_email":null,"home_phone":null,"home_postal_code":null,"home_state":null,"id":4,"instant_message":null,"last_name":"Skiles","linked_in_url":null,"mobile":null,"phone":null,"position":null,"twitter":null,"type":"Contact","updated_at":"2014/05/19
+        11:41:43 -0400","user_id":2,"viewed_at":null,"website":null,"work_address_1":null,"work_address_2":null,"work_city":null,"work_country":null,"work_postal_code":null,"work_state":null,"company_name":"Rosenbaum
+        Inc","full_name":"Tamia Skiles","predefined_contacts_tag_ids":[],"deal_ids":[],"image_thumb_url":"/images/thumb/missing.png","image_mobile_url":"/images/mobile/missing.png","predefined_contacts_tags":[],"deals":[],"lead_source":{"id":2,"name":"Cold
+        Call"},"lead_status":{"hex_color":"C73408","id":2,"name":"Hot"},"company":{"id":4,"name":"Rosenbaum
+        Inc"},"user":{"id":2,"first_name":"Maggie","last_name":"Zemlak"},"custom_fields":{}}],"pagination":{"page":1,"page_var":"page","per_page":200,"pages":1,"total":4}}'
+    http_version: 
+  recorded_at: Mon, 19 May 2014 16:49:32 GMT
+recorded_with: VCR 2.3.0
