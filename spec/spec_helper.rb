@@ -1,19 +1,16 @@
 require 'rubygems'
 require 'vcr'
 require 'pipeline_deals'
-require 'pry'
 
-require 'pipeline_deals/pagination_spec'
-require 'pipeline_deals/has_documents'
-require 'pipeline_deals/has_notes'
-require 'pipeline_deals/has_calendar_entries'
-require 'pipeline_deals/has_people'
-require 'pipeline_deals/has_deals'
+begin
+  require 'pry'
+rescue LoadError
+end
+
+Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 PipelineDeals::Resource.site = ENV['PIPELINEDEALS_URL'] || "http://localhost:3000"
 PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY'] || 'iJHyFkMUBSfjUovt29'
-
-#ActiveResource::Base.logger = Logger.new(STDOUT)
 
 VCR.configure do |c|
   c.cassette_library_dir     = './spec/cassettes'

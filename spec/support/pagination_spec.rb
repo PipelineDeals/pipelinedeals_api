@@ -1,4 +1,3 @@
-
 shared_examples_for "a paginated collection" do
   let(:paginated_items) { VCR.use_cassette(cassette('items')) { described_class.find(:all) } }
 

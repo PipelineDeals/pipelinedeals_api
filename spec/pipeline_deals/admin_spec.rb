@@ -1,4 +1,5 @@
 require 'spec_helper'
+
 describe PipelineDeals, "admin data" do
   describe "deal stages" do
     it "should list the deal stages" do
