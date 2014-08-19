@@ -1,8 +1,8 @@
 shared_examples_for "an object that can have deals" do
-  it "should have deals" do
+  it "has deals" do
     VCR.use_cassette(cassette('deals')) do
-      deals_obj.deals.size.should >= 1
-      deals_obj.deals.first.should be_an_instance_of PipelineDeals::Deal
+      expect(deals_obj.deals.size).to be >= 1
+      expect(deals_obj.deals.first).to be_an_instance_of PipelineDeals::Deal
     end
   end
 end

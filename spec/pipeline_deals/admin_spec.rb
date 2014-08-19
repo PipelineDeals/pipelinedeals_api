@@ -5,8 +5,8 @@ describe PipelineDeals, "admin data" do
     it "should list the deal stages" do
       VCR.use_cassette(:list_deal_stages) do
         stages = PipelineDeals::DealStage.find(:all)
-        stages.size.should == 6
-        stages.first.name.should == 'Lost'
+        expect(stages.size).to eq(6)
+        expect(stages.first.name).to eq 'Lost'
       end
     end
   end

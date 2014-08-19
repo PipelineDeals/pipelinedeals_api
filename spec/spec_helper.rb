@@ -7,10 +7,17 @@ begin
 rescue LoadError
 end
 
-Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
+require 'support/pagination_spec'
+require 'support/has_documents'
+require 'support/has_notes'
+require 'support/has_calendar_entries'
+require 'support/has_people'
+require 'support/has_deals'
 
 PipelineDeals::Resource.site = ENV['PIPELINEDEALS_URL'] || "http://localhost:3000"
 PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY'] || 'iJHyFkMUBSfjUovt29'
+
+#ActiveResource::Base.logger = Logger.new(STDOUT)
 
 VCR.configure do |c|
   c.cassette_library_dir     = './spec/cassettes'
