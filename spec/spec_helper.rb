@@ -14,8 +14,10 @@ require 'support/has_calendar_entries'
 require 'support/has_people'
 require 'support/has_deals'
 
-PipelineDeals::Resource.site = ENV['PIPELINEDEALS_URL'] || "http://localhost:3000"
-PipelineDeals.api_key = ENV['PIPELINEDEALS_API_KEY'] || 'iJHyFkMUBSfjUovt29'
+PipelineDeals.configure do |c|
+  c.site = ENV['PIPELINEDEALS_URL'] || "http://localhost:3000"
+  c.api_key = ENV['PIPELINEDEALS_API_KEY'] || 'iJHyFkMUBSfjUovt29'
+end
 
 #ActiveResource::Base.logger = Logger.new(STDOUT)
 
