@@ -21,7 +21,9 @@ Or install it yourself as:
 First and foremost, register your api key:
 
 ```ruby
-PipelineDeals.api_key = 'abcd1234'
+PipelineDeals.configure do |config|
+  config.api_key = 'abcd1234'
+end
 ```
 
 ## Getting a single deal, person, or company:
