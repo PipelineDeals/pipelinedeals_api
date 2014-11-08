@@ -8,7 +8,7 @@ Dir[File.dirname(__FILE__) + '/resources/*.rb'].each {|file| p "requring #{file}
 
 module PipelineDeals
   class << self
-    attr_accessor :app_key, :api_key
+    attr_accessor :app_key, :api_key, :app_version
 
     def configure
       yield self

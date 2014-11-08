@@ -4,30 +4,25 @@ module PipelineDeals
     self.prefix = "/api/v3/"
     self.collection_parser = PipelineDeals::Collection
 
-
     def self.find(*arguments)
       scope = arguments.slice!(0)
       options = arguments.slice!(0) || {}
 
-      self.add_params(options, app_key: PipelineDeals.app_key) if PipelineDeals.app_key
-      self.add_params(options, api_key: PipelineDeals.api_key)
+      add_keys(options[:params] ||= {})
 
       super(scope, options)
     end
 
     def save
-      prefix_options[:app_key] = PipelineDeals.app_key if PipelineDeals.app_key
-      prefix_options[:api_key] = PipelineDeals.api_key
+      PipelineDeals::Resource.add_keys(prefix_options)
       self.include_root_in_json = true
       super
     end
 
-    def self.add_params(options, params)
-      if options[:params]
-        options[:params].merge!(params)
-      else
-        options.merge!({params: params})
-      end
+    def self.add_keys(hash)
+      hash[:app_key] = PipelineDeals.app_key if PipelineDeals.app_key
+      hash[:app_version] = PipelineDeals.app_version if PipelineDeals.app_version
+      hash[:api_key] = PipelineDeals.api_key
     end
   end
 end
