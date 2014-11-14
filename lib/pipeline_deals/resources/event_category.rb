@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class EventCategory < PipelineDeals::AdminResource
   end
 end

@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class CustomFieldLabelDropdownEntry < PipelineDeals::AdminResource
   end
 end

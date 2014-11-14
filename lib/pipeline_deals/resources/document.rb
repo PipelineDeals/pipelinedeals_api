@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class Document < PipelineDeals::Resource
     belongs_to :user, class_name: PipelineDeals::User
     belongs_to :deal, class_name: PipelineDeals::Deal

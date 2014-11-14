@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class Deal < PipelineDeals::Resource
     has_many :people, class_name: PipelineDeals::Person
     has_many :documents, class_name: PipelineDeals::Document
