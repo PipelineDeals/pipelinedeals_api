@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class PredefinedContactsTag < PipelineDeals::AdminResource
   end
 end

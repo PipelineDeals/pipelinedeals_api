@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class Resource < ActiveResource::Base
     self.site = "https://api.pipelinedeals.com"
     self.prefix = "/api/v3/"

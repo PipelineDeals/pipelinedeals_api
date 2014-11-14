@@ -1,4 +1,4 @@
-module PipelineDeals
+class PipelineDeals
   class DealStage < PipelineDeals::AdminResource; end
   class NoteCategory < PipelineDeals::AdminResource; end
   class DealCustomFieldLabel < PipelineDeals::AdminResource; end
