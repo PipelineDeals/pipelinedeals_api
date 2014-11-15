@@ -1,3 +1,3 @@
-class PipelineDeals
+module PipelineDeals
   VERSION = "0.3.0"
 end
