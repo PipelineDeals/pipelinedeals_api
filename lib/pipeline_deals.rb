@@ -10,11 +10,6 @@ module PipelineDeals
   class << self
     attr_accessor :app_key, :api_key, :app_version
 
-    def configure
-      yield self
-      true
-    end
-
     def site
       PipelineDeals::Resource.site
     end
@@ -23,5 +18,10 @@ module PipelineDeals
       PipelineDeals::Resource.site = site
     end
 
+  end
+
+  def self.configure
+    yield self
+    true
   end
 end
