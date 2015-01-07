@@ -1,4 +1,4 @@
-class PipelineDeals
+module PipelineDeals
   class Account < PipelineDeals::Resource
     include ActiveResource::Singleton
     def self.account(options = {})

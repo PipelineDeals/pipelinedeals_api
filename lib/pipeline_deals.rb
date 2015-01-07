@@ -6,14 +6,9 @@ require_relative 'pipeline_deals/resources/definitions'
 
 Dir[File.dirname(__FILE__) + '/resources/*.rb'].each {|file| p "requring #{file}"; require file }
 
-class PipelineDeals
+module PipelineDeals
   class << self
     attr_accessor :app_key, :api_key, :app_version
-
-    def configure
-      yield self
-      true
-    end
 
     def site
       PipelineDeals::Resource.site
@@ -23,5 +18,10 @@ class PipelineDeals
       PipelineDeals::Resource.site = site
     end
 
+  end
+
+  def self.configure
+    yield self
+    true
   end
 end

@@ -1,4 +1,4 @@
-class PipelineDeals
+module PipelineDeals
   class NoteCategory < PipelineDeals::AdminResource
   end
 end

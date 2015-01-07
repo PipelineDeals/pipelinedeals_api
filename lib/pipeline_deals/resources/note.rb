@@ -1,4 +1,4 @@
-class PipelineDeals
+module PipelineDeals
   class Note < PipelineDeals::Resource
     belongs_to :note_category, class_name: PipelineDeals::NoteCategory
     belongs_to :company, class_name: PipelineDeals::Company
