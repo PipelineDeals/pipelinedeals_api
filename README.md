@@ -26,6 +26,15 @@ PipelineDeals.configure do |config|
 end
 ```
 
+If you have an app_key, register this along with your api key:
+
+```ruby
+PipelineDeals.configure do |config|
+  config.api_key = 'abcd1234'
+  config.app_key = 'xxxxxxxxxxxxx'
+end
+```
+
 ## Getting a single deal, person, or company:
 
 ```ruby
