@@ -20,9 +20,11 @@ module PipelineDeals
     end
 
     def self.add_keys(hash)
+      hash[:api_key] = PipelineDeals.api_key
+
+      hash[:account_key] = PipelineDeals.account_key if PipelineDeals.account_key
       hash[:app_key] = PipelineDeals.app_key if PipelineDeals.app_key
       hash[:app_version] = PipelineDeals.app_version if PipelineDeals.app_version
-      hash[:api_key] = PipelineDeals.api_key
     end
   end
 end
