@@ -1,8 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem 'activeresource', '~> 4.0.0'
-#gem 'activeresource', :path => "activeresource-4.0.0.beta1"
+gem 'activeresource'
 
 group :test do
   gem 'rspec'

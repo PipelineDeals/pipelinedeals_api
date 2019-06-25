@@ -1,34 +1,35 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (4.1.1)
-      activesupport (= 4.1.1)
+    activemodel (5.2.3)
+      activesupport (= 5.2.3)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
       builder (~> 3.1)
-    activeresource (4.0.0)
-      activemodel (~> 4.0)
-      activesupport (~> 4.0)
-      rails-observers (~> 0.1.1)
-    activesupport (4.1.1)
-      i18n (~> 0.6, >= 0.6.9)
-      json (~> 1.7, >= 1.7.7)
+    activeresource (5.1.0)
+      activemodel (>= 5.0, < 7)
+      activemodel-serializers-xml (~> 1.0)
+      activesupport (>= 5.0, < 7)
+    activesupport (5.2.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.4)
-    builder (3.2.2)
+    builder (3.2.3)
     coderay (1.0.8)
+    concurrent-ruby (1.1.5)
     crack (0.3.2)
     diff-lcs (1.2.5)
-    i18n (0.6.9)
-    json (1.8.1)
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
     method_source (0.8.1)
-    minitest (5.3.4)
+    minitest (5.11.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
-    rails-observers (0.1.2)
-      activemodel (~> 4.0)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
@@ -42,8 +43,8 @@ GEM
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
     slop (3.4.3)
-    thread_safe (0.3.3)
-    tzinfo (1.1.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
     vcr (2.9.2)
     webmock (1.11.0)
@@ -54,8 +55,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeresource (~> 4.0.0)
+  activeresource
   pry
   rspec
   vcr
   webmock
+
+BUNDLED WITH
+   1.16.2
