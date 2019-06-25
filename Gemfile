@@ -2,7 +2,6 @@
 source "https://rubygems.org"
 
 gem 'activeresource'
-#gem 'activeresource', :path => "activeresource-4.0.0.beta1"
 
 group :test do
   gem 'rspec'
